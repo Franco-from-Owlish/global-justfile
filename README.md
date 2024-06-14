@@ -11,6 +11,15 @@ Useful for running regular commands.
 > ```just``` must be installed.
 
 ```bash
-curl -o ~/.config/just/justfile 
+curl -o ~/.config/just/justfile https://raw.githubusercontent.com/Franco-from-Owlish/global-justfile/main/justfile
 ```
 
+## Global recipe alias
+
+```bash
+for recipe in `just -g --summary`; do
+  if [ $recipe != "default" ]; then
+    alias $recipe="just -g --working-directory . $recipe";
+  if
+done
+```
