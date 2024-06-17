@@ -8,3 +8,5 @@ nvim-dev:
 update-nvim-config:
   curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/Franco-from-Owlish/astro-vim-config/main/install.sh | sh
 
+update-global-justfile:
+  curl -o ~/.config/just/justfile https://raw.githubusercontent.com/Franco-from-Owlish/global-justfile/main/justfile
